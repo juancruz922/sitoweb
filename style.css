@@ -1,526 +1,213 @@
 body {
-    font-family: 'Playfair Display', serif; /* Cambiado a una tipografía más elegante */
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-/* style.css */
-
-
-.carousel-container {
-    margin: 0; /* Eliminar margen */
-    padding: 0; /* Eliminar padding */
-}
-
-.carousel-slide {
-    margin: 0; /* Asegurarte de que no haya margen aquí */
-}
-/* style.css */
-
-/* Estilos generales */
-body {
     font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Color de texto */
 }
 
-/* Estilo para el header y la navbar */
 header {
-    background-color: #333; /* Color de fondo de la navbar */
-    position: fixed; /* Fijar la navbar en la parte superior */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
-    padding-top: 20px; /* Espacio adicional arriba de la navbar */
-}
-
-nav {
-    display: flex;
-    justify-content: center; /* Centrar los enlaces en la navbar */
-    padding: 15px 0; /* Espaciado interno */
+    background-color: #2c3e50; /* Fondo del encabezado */
+    padding: 10px 20px;
 }
 
 nav ul {
-    list-style: none; /* Quitar los puntos de la lista */
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin: 0 20px; /* Espaciado entre los enlaces */
-}
-
-nav a {
-    color: white; /* Color del texto de los enlaces */
-    text-decoration: none; /* Quitar el subrayado */
-    font-weight: 500; /* Hacer el texto un poco más pesado */
-    transition: color 0.3s; /* Transición suave al pasar el ratón */
-}
-
-nav a:hover {
-    color: #ffcc00; /* Color de texto al pasar el ratón */
-}
-
-/* Evitar superposición con el contenido */
-.contact-container {
-    padding-top: 80px; /* Espacio suficiente para la navbar fija */
-}
-
-/* Estilos para la sección de contacto */
-.contact-text {
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Estilos adicionales para la sección de confianza */
-.trust-container {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.trust-image {
-    width: 100px; /* Ajustar el tamaño de la imagen */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-.footer-links {
     list-style: none;
     padding: 0;
 }
 
-.footer-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.contact-container {
-    margin-top: 0; /* Asegúrate de que no haya margen superior */
-    padding: 0; /* Eliminar padding si es necesario */
-}
-
-.carousel-container {
-    margin-bottom: 0; /* Eliminar margen inferior */
-}
-
-.contact-container {
-    margin-top: -10px; /* Ajustar si es necesario */
-}
-
-.carousel-container {
-    position: relative;
-    width: 100vw; /* Cambia a 100vw para usar todo el ancho de la ventana */
-    height: 100vh; /* Asegúrate de que el carrusel tenga 100vh */
-    margin: 0; /* Elimina cualquier margen */
-    overflow: hidden;
-}
-.carousel-container {
-    position: relative;
-    width: 100vw; /* Todo el ancho de la ventana */
-    height: 100vh; /* Todo el alto de la ventana */
-    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
-}
-
-.carousel-slide {
-    display: none; /* Inicialmente oculta las diapositivas */
-    width: 100%; /* Cada diapositiva ocupa el 100% del contenedor */
-    height: 100%; /* Asegura que la diapositiva ocupe todo el alto del contenedor */
-}
-
-.carousel-slide img {
-    width: 100%; /* Ajusta la imagen al 100% del ancho de la diapositiva */
-    height: 100%; /* Ajusta la imagen al 100% del alto de la diapositiva */
-    object-fit: cover; /* Mantiene la proporción y cubre el área */
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
-}
-header {
-    background-color: rgba(75, 75, 75, 0.8);
-    color: white;
-    padding: 0; /* Elimina el padding */
-    text-align: center;
-    width: 100vw; /* Asegura que la barra ocupe todo el ancho de la ventana */
-    position: fixed; /* Mantiene la barra fija en la parte superior */
-    z-index: 10;
-}
-footer {
-    background-color: #4b4b4b; /* O cualquier color que desees */
-    color: white;
-    padding: 10px 0; /* Espacio arriba y abajo */
-    width: 100vw; /* Asegúrate de que ocupe todo el ancho */
-    position: relative; /* Puedes dejarlo en su posición natural */
-}
-
-header {
-    background-color: rgba(75, 75, 75, 0.8); /* Color gris oscuro con opacidad */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    position: fixed; /* Fijo para que no se mueva */
-    width: 100%;
-    z-index: 10; /* Asegura que la barra esté por encima del carrusel */
-}
-@media (max-width: 768px) {
-    .carousel-container {
-        height: 40vh; /* Ajusta el alto del carrusel para pantallas móviles */
-    }
-
-    .carousel-slide img {
-        height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
-        object-fit: cover; /* Recorta la imagen para que se ajuste al ancho del contenedor */
-    }
-}
-@media (max-width: 768px) {
-    .carousel-text h1 {
-        font-size: 1.5em; /* Reduce el tamaño de la fuente */
-    }
-
-    .carousel-text h2 {
-        font-size: 1em; /* Reduce el tamaño del subtítulo */
-    }
-
-    .carousel-text {
-        bottom: 10%; /* Baja el texto un poco más */
-    }
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
 nav ul li {
-    margin: 0 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
-nav a {
-    color: white;
+nav ul li a {
+    color: #ffffff; /* Color del texto del menú */
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #aaccff;
+.about-container {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; /* Fondo más suave */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.carousel-container {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto; /* Asegura que el carrusel esté centrado */
-    overflow: hidden;
-    border-radius: 10px;
+.about-image {
+    flex: 1;
+    margin-right: 20px; /* Espaciado a la derecha */
+    overflow: hidden; /* Para evitar que la imagen sobresalga */
+    border-radius: 10px; /* Bordes redondeados en el contenedor de la imagen */
 }
 
-.carousel-slide {
-    display: block;
-    transition: opacity 0.5s ease;
+.about-image img {
+    width: 100%; /* Asegura que la imagen use todo el ancho disponible */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+    transition: transform 0.3s ease; /* Efecto suave en la transformación */
 }
 
-.carousel-slide img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 10px;
+.about-image img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
 }
 
-.carousel-text {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white; /* Texto en blanco */
-    padding: 10px 20px;
-    text-align: center;
+.about-text {
+    flex: 2; /* Hace que el texto ocupe más espacio */
 }
 
-.carousel-text h1 {
-    margin: 0;
-    font-size: 1.5em; /* Tamaño reducido para el nombre */
+.about-text h2 {
+    font-size: 28px; /* Tamaño de fuente más grande para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #2c3e50; /* Color del título */
 }
 
-.carousel-text h2 {
-    margin: 5px 0 0;
-    font-size: 1.5em; /* Tamaño aumentado para el subtítulo */
-    font-weight: normal;
+.about-text p {
+    font-size: 16px; /* Tamaño de fuente para el párrafo */
+    line-height: 1.5; /* Mejora el interlineado */
+    margin-top: 0; /* Elimina margen superior */
 }
 
+/* Estilos para la sección de contacto */
 .contact-container {
-    padding: 40px 20px;
-    background-color: #e0e0e0; /* Fondo gris claro */
-    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+    padding: 20px;
 }
 
-.contact-text {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.phone-button {
-    display: inline-block;
-    background-color: #4b4b4b;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.phone-button:hover {
-    background-color: #666;
+.contact-text h2 {
+    color: #2c3e50; /* Color del texto */
 }
 
 .contact-info {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias líneas */
 }
 
 .contact-item {
+    flex: 1;
     display: flex;
     align-items: center;
-    margin: 10px 0;
-    width: 100%; /* Para ocupar todo el ancho */
-    max-width: 600px; /* Ancho máximo de los elementos de contacto */
-    padding: 10px; /* Espaciado interno */
-    background-color: white; /* Fondo blanco para cada ítem de contacto */
-    border-radius: 5px; /* Esquinas redondeadas */
+    margin: 10px; /* Espaciado entre los elementos de contacto */
 }
 
 .contact-item img {
-    width: 40px;
-    margin-right: 10px;
+    margin-right: 10px; /* Espacio a la derecha de los iconos */
 }
 
-.title {
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #4b4b4b;
-    color: white;
-    margin-top: 20px;
-}
-
-footer {
-    background-color: #f2f2f2; /* Color de fondo claro */
-    padding: 20px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    border-top: 1px solid #ccc; /* Línea superior para separación */
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: #333; /* Color del texto */
-}
-
-.footer-links a:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
-}
-footer {
-    background-color: #f2f2f2; /* Color de fondo claro */
-    padding: 20px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    border-top: 1px solid #ccc; /* Línea superior para separación */
-}
-
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-content p {
-    color: #000; /* Texto en negro */
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: #000; /* Texto en negro para enlaces */
-}
-
-.footer-links a:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
-}
-
+/* Estilos para la sección de confianza */
 .trust-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 40px 0; /* Espacio alrededor de la imagen */
+    background-color: #f4f4f4; /* Fondo suave */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .trust-image {
-    max-width: 4000px; /* Aumenta el tamaño de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 90px; /* Aumenta el espacio entre la imagen y el texto */
+    max-width: 150px; /* Tamaño máximo de la imagen de confianza */
+    margin-right: 20px; /* Espacio a la derecha */
 }
 
-.trust-text {
-    font-size: 1.8rem; /* Aumenta el tamaño del texto */
+.trust-text p {
     font-style: italic; /* Texto en cursiva */
-    color: #333; /* Color del texto */
-    text-align: left; /* Alineación del texto */
 }
 
-/* Ajustes para el carrusel */
-.carousel {
-    width: 100%; /* Ocupa todo el ancho */
-    height: 70vh; /* Altura del carrusel */
-    position: relative;
-    overflow: hidden; /* Para ocultar elementos que sobresalen */
-}
-
-.carousel img {
-    width: 100%; /* Hace que la imagen ocupe el ancho completo */
-    height: auto; /* Mantiene la relación de aspecto */
-}
-
-/* Ajustes para el texto en el carrusel */
-.carousel-text {
-    position: absolute;
-    top: 50%; /* Centrado vertical */
-    left: 50%; /* Centrado horizontal */
-    transform: translate(-50%, -50%); /* Ajusta la posición */
+/* Estilos del pie de página */
+footer {
+    background-color: #2c3e50; /* Fondo del pie de página */
+    color: #ffffff; /* Color del texto del pie de página */
     text-align: center;
+    padding: 10px 0;
 }
 
-/* Estilos generales */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif; /* Cambia a la fuente deseada */
-}
-
-.header, .footer {
-    padding: 10px; /* Espacio en la parte superior e inferior */
-}
-
-/* Estilos del contenedor de contacto */
-.contact-container {
-    background-color: #f0f0f0; /* Fondo gris claro */
-    padding: 20px; /* Espacio interno */
+.footer-content {
     display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: center; /* Centra horizontalmente */
-}
-
-/* Ajustes para las imágenes y el texto de confianza */
-.trust-section {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center; /* Centra horizontalmente */
-    margin-top: 20px;
+}
+.about-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    background-color: #f9f9f9; /* Fondo más suave */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.trust-section img {
-    max-width: 100%; /* Hace que la imagen sea responsive */
+.about-image {
+    flex: 0 0 40%; /* Ajusta el ancho de la imagen */
+    margin-right: 30px; /* Aumentar el espaciado a la derecha */
+    overflow: hidden; /* Para evitar que la imagen sobresalga */
+    border-radius: 10px; /* Bordes redondeados en el contenedor de la imagen */
+}
+
+.about-image img {
+    width: 100%; /* Asegura que la imagen use todo el ancho disponible */
     height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+    transition: transform 0.3s ease; /* Efecto suave en la transformación */
 }
 
-.trust-text {
-    margin-left: 20px; /* Espacio entre la imagen y el texto */
-    font-size: 1.2em; /* Tamaño de fuente ajustado */
+/* Asegura que el texto esté alineado correctamente */
+.about-text {
+    flex: 2; /* Hace que el texto ocupe más espacio */
+    max-width: 400px; /* Restringe el ancho del contenedor de texto */
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-    .carousel-text h1 {
-        font-size: 2em; /* Tamaño de fuente más pequeño */
-    }
 
-    .carousel-text p {
-        font-size: 1.2em; /* Tamaño de fuente más pequeño */
-    }
-
-    .trust-section {
-        flex-direction: column; /* Coloca la imagen arriba en pantallas pequeñas */
-        align-items: center; /* Centra la imagen y el texto */
-    }
-
-    .trust-section img {
-        margin-bottom: 10px; /* Espacio debajo de la imagen */
-    }
-
-.carousel-slide img {
-    width: 100%;
-    height: 100vh; /* O en lugar de 100vh usa una altura específica en px si necesitas ajustar */
-    object-fit: cover;
+.about-text h2 {
+    font-size: 28px; /* Tamaño de fuente más grande para el título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #2c3e50; /* Color del título */
+    font-family: 'Playfair Display', serif; /* Cambia la tipografía del título */
 }
 
-    @media (max-width: 768px) {
-    .carousel-text h1 {
-        font-size: 4vw; /* Ajusta el tamaño según necesites */
-    }
-
-    .carousel-text h2 {
-        font-size: 3vw; /* Ajusta el tamaño según necesites */
-    }
-
-    /* Centrar el texto en dispositivos móviles */
-    .carousel-text {
-        bottom: 10%; /* Ajusta la posición */
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        padding: 5px;
-    }
-
-        .carousel-container {
-    position: relative;
-    width: 100%;
-    margin: 0; /* Elimina cualquier margen */
-    max-width: none; /* Asegura que no haya límite de ancho */
+.about-text p {
+    font-size: 26px; /* Tamaño de fuente para el párrafo */
+    line-height: 1.5; /* Mejora el interlineado */
+    margin-top: 0; /* Elimina margen superior */
+    font-family: Arial, sans-serif; /* Cambia la tipografía del texto */
+    max-height: 400px; /* Limita la altura del texto para mantenerlo compacto */
+    overflow: hidden; /* Oculta el contenido que exceda el max-height */
+}
+header {
+    background-color: #2c3e50; /* Fondo del encabezado */
+    padding: 10px 0; /* Ajuste del padding para centrado */
 }
 
+nav {
+    display: flex; /* Usar flexbox para centrar contenido */
+    justify-content: center; /* Centrar los elementos en el contenedor */
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Usar flexbox en la lista */
+    justify-content: center; /* Centrar elementos de la lista */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen del último elemento */
+}
+.about-image img {
+    width: 30%; /* Tamaño en computadoras */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+    transition: transform 0.3s ease; /* Efecto suave en la transformación */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 968px) {
+    .about-image img {
+        width: 100%; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
+    }
 }
 
