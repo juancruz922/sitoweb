@@ -11,6 +11,24 @@ body {
     margin: 0; /* Elimina cualquier margen */
     overflow: hidden;
 }
+.carousel-container {
+    position: relative;
+    width: 100vw; /* Todo el ancho de la ventana */
+    height: 100vh; /* Todo el alto de la ventana */
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+}
+
+.carousel-slide {
+    display: none; /* Inicialmente oculta las diapositivas */
+    width: 100%; /* Cada diapositiva ocupa el 100% del contenedor */
+    height: 100%; /* Asegura que la diapositiva ocupe todo el alto del contenedor */
+}
+
+.carousel-slide img {
+    width: 100%; /* Ajusta la imagen al 100% del ancho de la diapositiva */
+    height: 100%; /* Ajusta la imagen al 100% del alto de la diapositiva */
+    object-fit: cover; /* Mantiene la proporción y cubre el área */
+}
 
 .carousel-slide img {
     width: 100%;
