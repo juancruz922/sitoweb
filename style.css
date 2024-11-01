@@ -14,6 +14,29 @@ header {
     width: 100%;
     z-index: 10; /* Asegura que la barra esté por encima del carrusel */
 }
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 40vh; /* Ajusta el alto del carrusel para pantallas móviles */
+    }
+
+    .carousel-slide img {
+        height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+        object-fit: cover; /* Recorta la imagen para que se ajuste al ancho del contenedor */
+    }
+}
+@media (max-width: 768px) {
+    .carousel-text h1 {
+        font-size: 1.5em; /* Reduce el tamaño de la fuente */
+    }
+
+    .carousel-text h2 {
+        font-size: 1em; /* Reduce el tamaño del subtítulo */
+    }
+
+    .carousel-text {
+        bottom: 10%; /* Baja el texto un poco más */
+    }
+}
 
 nav ul {
     list-style-type: none;
