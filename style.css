@@ -310,5 +310,32 @@ body {
     object-fit: cover;
 }
 
+    @media (max-width: 768px) {
+    .carousel-text h1 {
+        font-size: 4vw; /* Ajusta el tamaño según necesites */
+    }
+
+    .carousel-text h2 {
+        font-size: 3vw; /* Ajusta el tamaño según necesites */
+    }
+
+    /* Centrar el texto en dispositivos móviles */
+    .carousel-text {
+        bottom: 10%; /* Ajusta la posición */
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        padding: 5px;
+    }
+
+        .carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0; /* Elimina cualquier margen */
+    max-width: none; /* Asegura que no haya límite de ancho */
+}
+
+}
+
 }
 
