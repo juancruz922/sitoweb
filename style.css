@@ -303,4 +303,12 @@ body {
     .trust-section img {
         margin-bottom: 10px; /* Espacio debajo de la imagen */
     }
+
+.carousel-slide img {
+    width: 100%;
+    height: 100vh; /* O en lugar de 100vh usa una altura específica en px si necesitas ajustar */
+    object-fit: cover;
 }
+
+}
+
