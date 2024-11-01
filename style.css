@@ -4,6 +4,21 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+
+.carousel-container {
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar padding */
+}
+
+.carousel-slide {
+    margin: 0; /* Asegurarte de que no haya margen aquí */
+}
+
+.contact-container {
+    margin-top: 0; /* Asegúrate de que no haya margen superior */
+    padding: 0; /* Eliminar padding si es necesario */
+}
+
 .carousel-container {
     margin-bottom: 0; /* Eliminar margen inferior */
 }
