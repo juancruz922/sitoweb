@@ -1,0 +1,306 @@
+body {
+    font-family: 'Playfair Display', serif; /* Cambiado a una tipografía más elegante */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgba(75, 75, 75, 0.8); /* Color gris oscuro con opacidad */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed; /* Fijo para que no se mueva */
+    width: 100%;
+    z-index: 10; /* Asegura que la barra esté por encima del carrusel */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #aaccff;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto; /* Asegura que el carrusel esté centrado */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-slide {
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Texto en blanco */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.carousel-text h1 {
+    margin: 0;
+    font-size: 1.5em; /* Tamaño reducido para el nombre */
+}
+
+.carousel-text h2 {
+    margin: 5px 0 0;
+    font-size: 1.5em; /* Tamaño aumentado para el subtítulo */
+    font-weight: normal;
+}
+
+.contact-container {
+    padding: 40px 20px;
+    background-color: #e0e0e0; /* Fondo gris claro */
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.phone-button {
+    display: inline-block;
+    background-color: #4b4b4b;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.phone-button:hover {
+    background-color: #666;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%; /* Para ocupar todo el ancho */
+    max-width: 600px; /* Ancho máximo de los elementos de contacto */
+    padding: 10px; /* Espaciado interno */
+    background-color: white; /* Fondo blanco para cada ítem de contacto */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.contact-item img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #4b4b4b;
+    color: white;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #f2f2f2; /* Color de fondo claro */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    border-top: 1px solid #ccc; /* Línea superior para separación */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333; /* Color del texto */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+footer {
+    background-color: #f2f2f2; /* Color de fondo claro */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    border-top: 1px solid #ccc; /* Línea superior para separación */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    color: #000; /* Texto en negro */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000; /* Texto en negro para enlaces */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.trust-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0; /* Espacio alrededor de la imagen */
+}
+
+.trust-image {
+    max-width: 4000px; /* Aumenta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 90px; /* Aumenta el espacio entre la imagen y el texto */
+}
+
+.trust-text {
+    font-size: 1.8rem; /* Aumenta el tamaño del texto */
+    font-style: italic; /* Texto en cursiva */
+    color: #333; /* Color del texto */
+    text-align: left; /* Alineación del texto */
+}
+
+/* Ajustes para el carrusel */
+.carousel {
+    width: 100%; /* Ocupa todo el ancho */
+    height: 70vh; /* Altura del carrusel */
+    position: relative;
+    overflow: hidden; /* Para ocultar elementos que sobresalen */
+}
+
+.carousel img {
+    width: 100%; /* Hace que la imagen ocupe el ancho completo */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Ajustes para el texto en el carrusel */
+.carousel-text {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta la posición */
+    text-align: center;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Cambia a la fuente deseada */
+}
+
+.header, .footer {
+    padding: 10px; /* Espacio en la parte superior e inferior */
+}
+
+/* Estilos del contenedor de contacto */
+.contact-container {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px; /* Espacio interno */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+/* Ajustes para las imágenes y el texto de confianza */
+.trust-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 20px;
+}
+
+.trust-section img {
+    max-width: 100%; /* Hace que la imagen sea responsive */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+.trust-text {
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    font-size: 1.2em; /* Tamaño de fuente ajustado */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-text h1 {
+        font-size: 2em; /* Tamaño de fuente más pequeño */
+    }
+
+    .carousel-text p {
+        font-size: 1.2em; /* Tamaño de fuente más pequeño */
+    }
+
+    .trust-section {
+        flex-direction: column; /* Coloca la imagen arriba en pantallas pequeñas */
+        align-items: center; /* Centra la imagen y el texto */
+    }
+
+    .trust-section img {
+        margin-bottom: 10px; /* Espacio debajo de la imagen */
+    }
+}
