@@ -5,6 +5,14 @@ body {
     background-color: #f4f4f4;
 }
 .carousel-container {
+    margin-bottom: 0; /* Eliminar margen inferior */
+}
+
+.contact-container {
+    margin-top: -10px; /* Ajustar si es necesario */
+}
+
+.carousel-container {
     position: relative;
     width: 100vw; /* Cambia a 100vw para usar todo el ancho de la ventana */
     height: 100vh; /* Asegúrate de que el carrusel tenga 100vh */
